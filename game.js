@@ -29,6 +29,10 @@ function gameOver() {
     var audio = new Audio(sounds[4]);
     audio.play();
     document.querySelector("h1").innerHTML = "Game Over !! <br> Press 's' to Start Again";
+    document.querySelector("body").classList.add("game-over");
+    setTimeout(function () {
+        document.querySelector("body").classList.remove("game-over");
+    }, 500);
     userPatter = [];
     gamePattern = [];
     var btns = document.querySelectorAll(".btn");
