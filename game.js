@@ -28,7 +28,7 @@ function animateFlash(colorId) {
 function gameOver() {
     var audio = new Audio(sounds[4]);
     audio.play();
-    document.querySelector("h1").innerHTML = "Game Over !! <br> Press 's' to Start Again";
+    document.querySelector("h1").innerHTML = `Game Over!!<br>Your Score: ${level}<br> Press 's' to Start Again`;
     document.querySelector("body").classList.add("game-over");
     setTimeout(function () {
         document.querySelector("body").classList.remove("game-over");
