@@ -66,7 +66,7 @@ function nextLevel() {
     animateFlash(nextRandom);
     userPatter = [];
     level++;
-    document.querySelector("h1").innerHTML = "Game Started "+"Level: "+level;
+    document.querySelector("h1").innerHTML = "Level: "+level;
 }
 
 function startGame(Event) {
@@ -77,7 +77,7 @@ function startGame(Event) {
     userPatter = [];
     level = 0;
     
-    document.querySelector("h1").innerHTML = "Game Started "+"Level: "+level;
+    document.querySelector("h1").innerHTML = "Game Started";
     
     var btns = document.querySelectorAll(".btn");
     
